@@ -22,7 +22,7 @@ const Layout = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <BookOpen className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold">LinguaLearn</span>
+            <span className="text-xl font-bold">学习助手</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">
@@ -109,7 +109,7 @@ const Layout = () => {
             <div>
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <BookOpen className="h-6 w-6 mr-2 text-blue-600" />
-                LinguaLearn
+                学习助手
               </h3>
               <p className="mb-4">Immersive language learning platform for English, Japanese, and Korean.</p>
             </div>
@@ -133,7 +133,7 @@ const Layout = () => {
             </div>
           </div>
           <div className="mt-8 pt-4 border-t border-gray-700 text-center">
-            <p>© 2026 LinguaLearn. All rights reserved.</p>
+            <p>© 2026 学习助手. All rights reserved.</p>
           </div>
         </div>
       </footer>

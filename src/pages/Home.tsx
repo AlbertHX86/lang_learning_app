@@ -112,7 +112,7 @@ const Home = () => {
       {/* Features Section */}
       <section className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose LinguaLearn</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose 学习助手</h2>
           <p className={`max-w-2xl mx-auto ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
             Our platform offers a comprehensive language learning experience designed to help you achieve fluency
           </p>
