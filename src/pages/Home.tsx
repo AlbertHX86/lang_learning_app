@@ -97,12 +97,12 @@ const Home = () => {
               ))}
             </div>
             
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
               <Link to="/courses" className="px-8 py-4 bg-white text-blue-700 font-semibold rounded-full hover:bg-blue-50 transition-colors shadow-lg">
                 Explore Courses
               </Link>
-              <Link to="/auth/register" className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
-                Start Free
+              <Link to="/auth/register" className="px-12 py-6 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-xl rounded-full hover:from-green-600 hover:to-emerald-700 transition-all shadow-xl hover:shadow-2xl transform hover:scale-105 animate-pulse">
+                🚀 Start Free Now
               </Link>
             </div>
           </div>
