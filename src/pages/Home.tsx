@@ -8,8 +8,8 @@ const Home = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸', color: 'bg-blue-500' },
-    { code: 'ja', name: 'Japanese', flag: '🇯🇵', color: 'bg-red-500' },
+    { code: 'en', name: 'Inglés', flag: '🇺🇸', color: 'bg-blue-500' },
+    { code: 'ja', name: 'Japonés', flag: '🇯🇵', color: 'bg-red-500' },
     { code: 'ko', name: 'Korean', flag: '🇰🇷', color: 'bg-blue-600' },
   ];
 
@@ -70,14 +70,14 @@ const Home = () => {
   ];
 
   return (
-    <div className={`space-y-16 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+    <div className={`space-y-16 ${theme === 'dark' ? 'text-white bg-gray-900' : 'text-gray-900 bg-blue-50'}`}>
       {/* Hero Section */}
       <section className="relative overflow-hidden rounded-3xl">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-900 opacity-95"></div>
         <div className="relative container mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-              Learn Languages the Immersive Way
+              Aprende Idiomas de Forma Inmersiva
             </h1>
             <p className="text-xl text-blue-100 mb-8">
               Master English, Japanese, and Korean with interactive lessons and real-world practice
@@ -122,7 +122,7 @@ const Home = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className={`p-8 rounded-2xl transition-all hover:shadow-lg ${theme === 'dark' ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'}`}
+              className={`p-8 rounded-2xl transition-all hover:shadow-lg ${theme === 'dark' ? 'bg-gray-800 hover:bg-gray-700' : 'bg-blue-100 hover:bg-blue-200'}`}
             >
               <div className="mb-6">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
@@ -149,7 +149,7 @@ const Home = () => {
             <Link 
               key={course.id}
               to={`/courses/${course.id}`}
-              className={`block rounded-2xl overflow-hidden transition-all hover:shadow-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}
+              className={`block rounded-2xl overflow-hidden transition-all hover:shadow-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-blue-100'}`}
             >
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -190,7 +190,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className={`rounded-3xl py-16 ${theme === 'dark' ? 'bg-gray-800' : 'bg-blue-50'}`}>
+      <section className={`rounded-3xl py-16 ${theme === 'dark' ? 'bg-gray-800' : 'bg-blue-200'}`}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Language Journey?</h2>
           <p className={`max-w-2xl mx-auto mb-8 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
