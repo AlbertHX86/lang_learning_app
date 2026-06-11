@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Book, BookOpen, User, Users, LogIn, Moon, Sun } from 'lucide-react';
+import { Menu, X, Home, Book, BookOpen, User, Users, CalendarDays, LogIn, Moon, Sun, Gamepad2 } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 
 const Layout = () => {
@@ -13,6 +13,8 @@ const Layout = () => {
     { path: '/courses', icon: Book, label: 'Courses' },
     { path: '/profile', icon: User, label: 'Profile' },
     { path: '/community', icon: Users, label: 'Community' },
+    { path: '/calendar', icon: CalendarDays, label: 'Calendar' },
+    { path: '/snake', icon: Gamepad2, label: 'Snake' },
   ];
 
   return (
@@ -22,7 +24,7 @@ const Layout = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <BookOpen className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold">学习助手</span>
+            <span className="text-xl font-bold">123</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">
@@ -109,7 +111,7 @@ const Layout = () => {
             <div>
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <BookOpen className="h-6 w-6 mr-2 text-blue-600" />
-                学习助手
+                123
               </h3>
               <p className="mb-4">Immersive language learning platform for English, Japanese, and Korean.</p>
             </div>
@@ -133,7 +135,7 @@ const Layout = () => {
             </div>
           </div>
           <div className="mt-8 pt-4 border-t border-gray-700 text-center">
-            <p>© 2026 学习助手. All rights reserved.</p>
+            <p>© 2026 123. All rights reserved.</p>
           </div>
         </div>
       </footer>

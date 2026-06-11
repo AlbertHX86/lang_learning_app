@@ -5,6 +5,8 @@ import CourseDetail from './pages/CourseDetail';
 import LearningModule from './pages/LearningModule';
 import Profile from './pages/Profile';
 import Community from './pages/Community';
+import Calendar from './pages/Calendar';
+import SnakeGame from './pages/SnakeGame';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Layout from './components/Layout';
@@ -20,6 +22,8 @@ function App() {
           <Route path="/learn/:courseId/:lessonId" element={<LearningModule />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/snake" element={<SnakeGame />} />
         </Route>
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/register" element={<Register />} />
